@@ -1,0 +1,52 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+END
+Attribute VB_Name = "SAPActivityTypeList"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Public ACTTYPE As String
+Public VALID_FROM As String
+Public VALID_TO As String
+Public ACT_UNIT As String
+Public COSTCENTER_CAT As String
+Public ACTIVITY_CAT As String
+Public ALLOC_COST_ELEM As String
+Public PRICE_INDICATOR As String
+Public AVERAGE_PRICE_IND As String
+Public PREDIS_FXD_COST As String
+Public MANUAL_ACT_QTY As String
+Public ACT_CAT_ACTUAL As String
+Public ACT_PRICE_IND As String
+Public LOCK_INDICATOR As String
+Public OUTPUT_UNIT As String
+Public OUTPUT_FACTOR As String
+Public NAME As String
+Public DESCRIPT As String
+
+Public Function create(p_ACTTYPE, p_VALID_FROM, p_VALID_TO, p_ACT_UNIT, p_COSTCENTER_CAT, p_ACTIVITY_CAT, _
+    p_ALLOC_COST_ELEM, p_PRICE_INDICATOR, p_AVERAGE_PRICE_IND, p_PREDIS_FXD_COST, _
+    p_MANUAL_ACT_QTY, p_ACT_CAT_ACTUAL, p_ACT_PRICE_IND, p_LOCK_INDICATOR, p_OUTPUT_UNIT, _
+    p_OUTPUT_FACTOR, p_NAME, p_DESCRIPT)
+    
+    ACTTYPE = p_ACTTYPE
+    VALID_FROM = p_VALID_FROM
+    VALID_TO = p_VALID_TO
+    ACT_UNIT = p_ACT_UNIT
+    COSTCENTER_CAT = p_COSTCENTER_CAT
+    ACTIVITY_CAT = p_ACTIVITY_CAT
+    ALLOC_COST_ELEM = p_ALLOC_COST_ELEM
+    PRICE_INDICATOR = p_PRICE_INDICATOR
+    AVERAGE_PRICE_IND = p_AVERAGE_PRICE_IND
+    PREDIS_FXD_COST = p_PREDIS_FXD_COST
+    MANUAL_ACT_QTY = p_MANUAL_ACT_QTY
+    ACT_CAT_ACTUAL = p_ACT_CAT_ACTUAL
+    ACT_PRICE_IND = p_ACT_PRICE_IND
+    LOCK_INDICATOR = p_LOCK_INDICATOR
+    OUTPUT_UNIT = p_OUTPUT_UNIT
+    OUTPUT_FACTOR = p_OUTPUT_FACTOR
+    NAME = p_NAME
+    DESCRIPT = p_DESCRIPT
+End Function
